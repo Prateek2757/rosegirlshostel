@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="675" viewBox="0 0 900 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B4B8A"/>
+      <stop offset="55%" stop-color="#8D78C0"/>
+      <stop offset="100%" stop-color="#D6C7F7"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <g filter="url(#soft)">
+    <circle cx="621" cy="314" r="230" fill="#D6C7F7" opacity="0.34"/>
+    <circle cx="489" cy="472" r="213" fill="#5B4B8A" opacity="0.44"/>
+    <circle cx="701" cy="124" r="168" fill="#5B4B8A" opacity="0.39"/>
+    <circle cx="326" cy="96" r="213" fill="#5B4B8A" opacity="0.50"/>
+  </g>
+  <rect width="900" height="675" fill="#1A1A1A" opacity="0.12"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+    font-family="Poppins, Inter, sans-serif" font-size="42" font-weight="600"
+    fill="#FFFFFF" opacity="0.85" letter-spacing="2">TWIN SHARING</text>
+</svg>

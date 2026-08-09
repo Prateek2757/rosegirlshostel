@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C6BA8"/>
+      <stop offset="55%" stop-color="#C9A45C"/>
+      <stop offset="100%" stop-color="#F8B400"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="67"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g filter="url(#soft)">
+    <circle cx="601" cy="180" r="257" fill="#C9A45C" opacity="0.37"/>
+    <circle cx="632" cy="561" r="425" fill="#C9A45C" opacity="0.44"/>
+    <circle cx="903" cy="535" r="440" fill="#F8B400" opacity="0.29"/>
+    <circle cx="797" cy="74" r="359" fill="#C9A45C" opacity="0.34"/>
+  </g>
+  <rect width="1200" height="900" fill="#1A1A1A" opacity="0.12"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+    font-family="Poppins, Inter, sans-serif" font-size="56" font-weight="600"
+    fill="#FFFFFF" opacity="0.85" letter-spacing="2">OUR STORY</text>
+</svg>

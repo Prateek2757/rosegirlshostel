@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="675" viewBox="0 0 900 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A2F5C"/>
+      <stop offset="55%" stop-color="#5B4B8A"/>
+      <stop offset="100%" stop-color="#F8B400"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  <rect width="900" height="675" fill="url(#bg)"/>
+  <g filter="url(#soft)">
+    <circle cx="490" cy="94" r="175" fill="#3A2F5C" opacity="0.46"/>
+    <circle cx="7" cy="625" r="182" fill="#3A2F5C" opacity="0.27"/>
+    <circle cx="672" cy="151" r="177" fill="#3A2F5C" opacity="0.35"/>
+    <circle cx="320" cy="301" r="357" fill="#3A2F5C" opacity="0.35"/>
+  </g>
+  <rect width="900" height="675" fill="#1A1A1A" opacity="0.12"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+    font-family="Poppins, Inter, sans-serif" font-size="42" font-weight="600"
+    fill="#FFFFFF" opacity="0.85" letter-spacing="2">DELUXE ROOM</text>
+</svg>
