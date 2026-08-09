@@ -45,7 +45,7 @@ export default function OpengraphImage() {
           A Safe & Comfortable Home for Girls in Kathmandu
         </div>
         <div style={{ marginTop: 28, fontSize: 28, color: "rgba(255,255,255,0.85)" }}>
-          Healthy meals · 24/7 security · High-speed WiFi · From Rs. 10,000/mo
+          Healthy meals · 24/7 security · High-speed WiFi · Comfortable room plans
         </div>
         <div
           style={{

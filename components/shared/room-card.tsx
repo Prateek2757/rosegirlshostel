@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Check, Ruler, Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { formatNpr, type Room } from "@/lib/data/rooms";
+import { type Room } from "@/lib/data/rooms";
 
 export function RoomCard({ room }: { room: Room }) {
   return (
@@ -21,10 +21,6 @@ export function RoomCard({ room }: { room: Room }) {
             Most Popular
           </Badge>
         )}
-        {/* <div className="glass absolute right-4 bottom-4 rounded-xl px-3.5 py-2 text-sm font-semibold">
-          {formatNpr(room.price)}
-          <span className="font-normal text-muted-foreground"> /month</span>
-        </div> */}
       </div>
 
       <div className="flex flex-1 flex-col p-6">

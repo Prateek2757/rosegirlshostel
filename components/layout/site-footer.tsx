@@ -29,7 +29,7 @@ export function SiteFooter() {
                 src="/images/rosegirlhostellogo.png"
                 alt="Rose Girls Hostel — Grace, Safety, Growth"
                 fill
-                sizes="420px"
+                sizes="4080px"
                 className="object-cover object-center"
               />
             </Link>

@@ -10,7 +10,7 @@ import {
 export type NearbyGroup = {
   icon: LucideIcon;
   category: string;
-  places: { name: string; distance: string; walkTime: string }[];
+  places: { name: string; distance: string; travelTime: string }[];
 };
 
 export const nearbyPlaces: NearbyGroup[] = [
@@ -18,46 +18,50 @@ export const nearbyPlaces: NearbyGroup[] = [
     icon: GraduationCap,
     category: "Colleges & Universities",
     places: [
-      { name: "Tribhuvan University (New Baneshwor campus)", distance: "600 m", walkTime: "8 min" },
-      { name: "Kathmandu Model College", distance: "450 m", walkTime: "6 min" },
-      { name: "Apex College", distance: "900 m", walkTime: "12 min" },
-      { name: "Islington College", distance: "1.8 km", walkTime: "10 min by bus" },
+      { name: "Apex College", distance: "433 m", travelTime: "5–7 min walk" },
+      { name: "St. Xavier’s College", distance: "1.4 km", travelTime: "6–10 min ride" },
+      { name: "The British College", distance: "1.6 km", travelTime: "7–10 min ride" },
+      { name: "Islington College", distance: "1.7 km", travelTime: "8–12 min ride" },
+      { name: "ISMT College", distance: "1.6 km", travelTime: "7–10 min ride" },
     ],
   },
   {
     icon: Stethoscope,
-    category: "Hospitals",
+    category: "Hospitals & Healthcare",
     places: [
-      { name: "Civil Service Hospital", distance: "800 m", walkTime: "10 min" },
-      { name: "Everest Hospital", distance: "1.1 km", walkTime: "14 min" },
-      { name: "Blue Cross Hospital", distance: "1.5 km", walkTime: "8 min by bus" },
+      { name: "Venus Hospital", distance: "299 m", travelTime: "4–5 min walk" },
+      { name: "Everest Hospital", distance: "878 m", travelTime: "10–13 min walk" },
+      { name: "Swacon International Hospital", distance: "894 m", travelTime: "11–13 min walk · Open 24 hours" },
+      { name: "Civil Service Hospital", distance: "1.2 km", travelTime: "5–8 min ride · Open 24 hours" },
+      { name: "Blue Cross Hospital", distance: "2 km", travelTime: "8–12 min ride · Open 24 hours" },
     ],
   },
   {
     icon: Bus,
     category: "Public Transport",
     places: [
-      { name: "New Baneshwor bus stop", distance: "150 m", walkTime: "2 min" },
-      { name: "Sajha Yatayat route stop", distance: "300 m", walkTime: "4 min" },
-      { name: "Koteshwor junction", distance: "1.6 km", walkTime: "9 min by bus" },
+      { name: "Maitidevi Chowk / Bus Stop", distance: "887 m", travelTime: "11–13 min walk" },
+      { name: "Tinkune Bus Stand", distance: "1.5 km", travelTime: "6–10 min ride" },
+      { name: "Gaushala Bus Stop", distance: "1.5 km", travelTime: "7–10 min ride" },
     ],
   },
   {
     icon: UtensilsCrossed,
     category: "Cafés & Restaurants",
     places: [
-      { name: "Himalayan Java Coffee", distance: "350 m", walkTime: "5 min" },
-      { name: "Bota Momo", distance: "500 m", walkTime: "7 min" },
-      { name: "Local food court", distance: "250 m", walkTime: "3 min" },
+      { name: "Himalayan Java Coffee – New Baneshwor", distance: "933 m", travelTime: "11–14 min walk" },
+      { name: "Mero Cafe", distance: "911 m", travelTime: "11–13 min walk" },
+      { name: "Go Foodie Cafe", distance: "952 m", travelTime: "12–14 min walk" },
+      { name: "The Friends Cafe", distance: "1.1 km", travelTime: "5–8 min ride" },
     ],
   },
   {
     icon: ShoppingBag,
-    category: "Shopping",
+    category: "Shopping & Daily Essentials",
     places: [
-      { name: "Bhatbhateni Supermarket", distance: "700 m", walkTime: "9 min" },
-      { name: "City Center Mall", distance: "2.2 km", walkTime: "12 min by bus" },
-      { name: "Local vegetable market", distance: "200 m", walkTime: "3 min" },
+      { name: "Bhatbhateni Supermarket – Anamnagar", distance: "726 m", travelTime: "9–11 min walk" },
+      { name: "Nature Super Market", distance: "844 m", travelTime: "10–12 min walk" },
+      { name: "New Baneshwor, Maitidevi & Anamnagar shopping areas", distance: "Nearby", travelTime: "Short ride" },
     ],
   },
 ];

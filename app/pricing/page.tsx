@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/shared/page-hero";
 import { Stagger, StaggerItem } from "@/components/motion/reveal";
 import { FaqSection } from "@/components/sections/faq-section";
-import { formatNpr, rooms } from "@/lib/data/rooms";
+import { rooms } from "@/lib/data/rooms";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Room Plans",
   description:
-    "Transparent monthly pricing at Rose Girls Hostel, Kathmandu — from Rs. 10,000/month with meals, WiFi, laundry and housekeeping included. No hidden fees.",
+    "Explore room plans at Rose Girls Hostel, Kathmandu. Contact us for current rates and availability.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -20,10 +20,10 @@ export default function PricingPage() {
   return (
     <>
       <PageHero
-        eyebrow="Pricing"
-        title="One monthly fee. Everything included."
-        description="Meals, WiFi, laundry, housekeeping, hot water and power backup are part of every plan — the price you see is the price you pay."
-        breadcrumbs={[{ name: "Pricing", href: "/pricing" }]}
+        eyebrow="Room Plans"
+        title="Comfortable living, thoughtfully included."
+        description="Meals, WiFi, laundry, housekeeping, hot water and power backup are included in every room plan. Contact us for current rates and availability."
+        breadcrumbs={[{ name: "Room Plans", href: "/pricing" }]}
       />
       <section className="section-padding pt-4 md:pt-6">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -43,10 +43,10 @@ export default function PricingPage() {
                   )}
                   <h2 className="font-heading text-lg font-semibold">{room.name}</h2>
                   <p className="mt-1 text-sm text-muted-foreground">{room.tagline}</p>
-                  <p className="mt-5 font-heading text-3xl font-bold text-primary dark:text-secondary-foreground">
-                    {formatNpr(room.price)}
-                    <span className="text-sm font-medium text-muted-foreground"> /month</span>
+                  <p className="mt-5 font-heading text-xl font-semibold text-primary dark:text-secondary-foreground">
+                    Enquire for Current Rates
                   </p>
+                  <p className="mt-1 text-sm text-muted-foreground">Flexible monthly plans available</p>
                   <ul className="mt-6 flex-1 space-y-2.5">
                     {room.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -68,8 +68,8 @@ export default function PricingPage() {
           </Stagger>
 
           <p className="mx-auto mt-10 max-w-xl text-center text-sm text-muted-foreground">
-            One-time refundable deposit: one month&apos;s rent. Admission fee:
-            Rs. 2,000. Discounts available for 6-month and annual advance payment.
+            Contact us for current admission details, available offers and
+            long-stay plan benefits.
           </p>
         </div>
       </section>

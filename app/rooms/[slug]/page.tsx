@@ -9,7 +9,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { RoomCard } from "@/components/shared/room-card";
 import { Reveal } from "@/components/motion/reveal";
 import { CtaBanner } from "@/components/sections/cta-banner";
-import { formatNpr, getRoom, rooms } from "@/lib/data/rooms";
+import { getRoom, rooms } from "@/lib/data/rooms";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const room = getRoom(slug);
   if (!room) return {};
   return {
-    title: `${room.name} — ${formatNpr(room.price)}/month`,
+    title: `${room.name} — Rose Girls Hostel`,
     description: `${room.description} Book the ${room.name} at Rose Girls Hostel, Kathmandu.`,
     alternates: { canonical: `/rooms/${room.slug}` },
   };
@@ -69,9 +69,11 @@ export default async function RoomDetailPage({ params }: Props) {
             </Reveal>
 
             <Reveal from="right">
-              <p className="font-heading text-4xl font-bold text-primary dark:text-secondary-foreground">
-                {formatNpr(room.price)}
-                <span className="text-lg font-medium text-muted-foreground"> /month</span>
+              <p className="font-heading text-3xl font-bold text-primary dark:text-secondary-foreground">
+                Enquire for Current Rates
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Contact us for availability and the best plan for your stay.
               </p>
 
               <div className="mt-5 flex gap-6 text-sm text-muted-foreground">

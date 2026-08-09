@@ -15,7 +15,6 @@ export function HostelJsonLd() {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    priceRange: "NPR 10,000 – 25,000 / month",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,
@@ -45,8 +44,6 @@ export function HostelJsonLd() {
     makesOffer: rooms.map((room) => ({
       "@type": "Offer",
       name: room.name,
-      price: room.price,
-      priceCurrency: "NPR",
       url: `${site.url}/rooms/${room.slug}`,
     })),
     sameAs: Object.values(site.social),

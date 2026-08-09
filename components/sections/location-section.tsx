@@ -1,4 +1,4 @@
-import { Footprints } from "lucide-react";
+import { Route } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { nearbyPlaces } from "@/lib/data/nearby";
@@ -11,14 +11,14 @@ export function LocationSection() {
         <SectionHeading
           eyebrow="Location"
           title="In the heart of New Baneshwor"
-          description="Walking distance to major colleges, hospitals and the city's best-connected bus stop."
+          description="Close to trusted colleges, hospitals, everyday essentials and Kathmandu's best-connected transport stops."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">
           <Reveal from="left" className="overflow-hidden rounded-3xl border shadow-soft">
             <iframe
               src={site.mapEmbedFallback}
-              title={`Map showing the location of ${site.name} in New Baneshwor, Kathmandu`}
+              title={`Map showing the exact location of ${site.name} in Kathmandu`}
               className="h-full min-h-[380px] w-full border-0"
               loading="lazy"
               allowFullScreen
@@ -41,8 +41,8 @@ export function LocationSection() {
                       <li key={place.name} className="text-sm">
                         <span className="block leading-snug">{place.name}</span>
                         <span className="mt-0.5 flex items-center gap-1.5 text-xs text-muted-foreground">
-                          <Footprints className="size-3.5 text-primary" aria-hidden="true" />
-                          {place.distance} · {place.walkTime}
+                          <Route className="size-3.5 text-primary" aria-hidden="true" />
+                          {place.distance} · {place.travelTime}
                         </span>
                       </li>
                     ))}

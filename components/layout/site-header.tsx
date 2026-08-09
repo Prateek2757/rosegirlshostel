@@ -66,7 +66,7 @@ export function SiteHeader() {
             height={1024}
             priority
             unoptimized
-            sizes="194px"
+            sizes="1944px"
             className="h-14 w-38 object-cover object-center"
           />
           <span className="sr-only">{site.name}</span>

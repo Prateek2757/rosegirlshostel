@@ -186,6 +186,17 @@
     0 16px 40px rgb(233 30 99 / 20%);
 }
 
+@utility hero-grain {
+  background-image: repeating-radial-gradient(
+    circle at 30% 20%,
+    rgb(255 255 255 / 4%) 0,
+    rgb(255 255 255 / 4%) 0.5px,
+    transparent 0.8px,
+    transparent 3px
+  );
+  mix-blend-mode: soft-light;
+}
+
 @utility section-padding {
   @apply py-16 md:py-18 lg:py-14;
 }

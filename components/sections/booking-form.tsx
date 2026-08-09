@@ -152,7 +152,7 @@ export function BookingForm({ defaultRoom }: { defaultRoom?: string }) {
             <SelectContent>
               {rooms.map((room) => (
                 <SelectItem key={room.slug} value={room.slug}>
-                  {room.name} — Rs. {room.price.toLocaleString("en-IN")}/mo
+                  {room.name}
                 </SelectItem>
               ))}
             </SelectContent>
